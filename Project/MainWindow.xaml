@@ -1,0 +1,67 @@
+﻿<Window x:Class="Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="Редактор" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4D6CE5" Offset="0.099"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFD189F0" Offset="0.51"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Добро пожаловать в приложение!" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Cascadia Mono Light" FontSize="24" Foreground="#FF411445"/>
+        <Label Content="Приложение предназначено для обработки ващего word-файла!" HorizontalAlignment="Center" Margin="0,188,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="16" Foreground="#FF081358"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Height="46" Margin="211,318,0,0" VerticalAlignment="Top" Width="168" Click="Entrance_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFB0DA9E" Offset="0.01"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Выход" HorizontalAlignment="Left" Height="46" Margin="420,318,0,0" VerticalAlignment="Top" Width="168" Click="Exit_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD14C8B"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image Margin="57,10,569,223" Source="/pngwing.com (1).png" Stretch="Fill"/>
+        <Image Margin="70,258,647,124" Source="/pochta.png" Stretch="Fill" RenderTransformOrigin="0.522,0.498">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-21.33"/>
+                    <TranslateTransform X="-0.108" Y="0.749"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="659,46,27,308" Source="/poch.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="39.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>
